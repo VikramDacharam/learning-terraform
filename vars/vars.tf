@@ -41,3 +41,6 @@ variable "Sample5" {
 output "values-in-list" {
   value = var.Sample4[3]
 }
+output "values-in-map" {
+  value = var.Sample5["number"]
+}
