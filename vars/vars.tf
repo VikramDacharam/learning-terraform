@@ -44,3 +44,8 @@ output "values-in-list" {
 output "values-in-map" {
   value = var.Sample5["number"]
 }
+
+variable "URL" {}
+output "URL" {
+  value = var.URL
+}
