@@ -19,3 +19,25 @@ variable "Sample2" {
 variable "Sample3" {
   default = true
 }
+
+# list variable type
+variable "Sample4" {
+  default = [
+  "Hello",
+    1000,
+    true,
+    "world"
+  ]
+}
+#Map variable Type
+variable "Sample5" {
+  default = {
+    string = "Hello world",
+    number = 100,
+    boolean = true
+  }
+}
+
+output "values-in-list" {
+  value = var.Sample4[3]
+}
