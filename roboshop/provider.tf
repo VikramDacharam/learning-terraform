@@ -3,7 +3,7 @@ provider "aws" {
 }
 terraform {
   backend "s3" {
-    bucket = "terraform-b64"
+    bucket = "workstation123"
     key    = "roboshop/terraform.tfstate"
     region = "us-east-1"
 
